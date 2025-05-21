@@ -1,1 +1,44 @@
 @import 'tailwindcss';
+
+@theme {
+	--ease-smooth: cubic-bezier(0, 0.8, 0.2, 1);
+
+	--breakpoint-lg: 900px;
+
+	--text-2xs: 0.5rem;
+
+	--container-8xl: 1536px;
+}
+
+:root {
+	font-size: 32px;
+	font-family: 'Golos Text', sans-serif;
+	background-image: url('/bg.png');
+	background-attachment: fixed;
+	background-position: center;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+*,
+*::before,
+*::after {
+	scrollbar-width: thin;
+	scrollbar-color: rgb(229 229 229) rgb(10 10 10);
+}
+
+*::-webkit-scrollbar {
+	width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+	background: rgb(10 10 10);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgb(229 229 229);
+	width: 4px;
+}
