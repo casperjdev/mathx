@@ -6,8 +6,7 @@
 
 <div
 	class={`${
-		open ? 'w-40' : 'w-0'
-	} ease-smooth fixed top-6 left-0 z-50 h-[calc(100svh-1.5rem)] overflow-hidden bg-black transition-all duration-200 lg:hidden`}
->
+		open ? 'translate-x-0' : '-translate-x-full'
+	} ease-smooth fixed top-6 left-0 z-50 h-full overflow-hidden border-r border-neutral-500 bg-neutral-950 transition-all duration-200 lg:hidden`}>
 	<Sidebar />
 </div>

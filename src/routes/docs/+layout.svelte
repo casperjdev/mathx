@@ -5,12 +5,21 @@
 	let { children } = $props();
 </script>
 
-<main class="max-w-8xl mx-auto flex h-full w-full flex-row pt-6">
+<div
+	class="max-8xl:opacity-0 text-ptrn-fg h-full flex-1 border-x bg-(image:--pattern-r) bg-[size:12px_12px] bg-fixed"
+></div>
+<div class="max-w-8xl flex w-full">
 	<div class="hidden lg:block">
 		<Sidebar />
 	</div>
-	<div class="flex h-full w-full flex-col overflow-y-scroll p-6 break-words">
+	<div
+		class="text-ptrn-fg h-full w-4 shrink-0 border-x bg-(image:--pattern-r) bg-[size:12px_12px] bg-fixed max-lg:hidden"
+	></div>
+	<div class="flex h-full w-full flex-col overflow-y-scroll p-2 break-words">
 		<Breadcrumbs />
 		{@render children()}
 	</div>
-</main>
+</div>
+<div
+	class="max-8xl:opacity-0 text-ptrn-fg h-full flex-1 border-x bg-(image:--pattern-r) bg-[size:12px_12px] bg-fixed"
+></div>

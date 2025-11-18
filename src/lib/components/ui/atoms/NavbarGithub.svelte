@@ -3,10 +3,9 @@
 </script>
 
 <a
-	href="https://github.com/vetemxnts/mathx"
+	href="https://github.com/casperjdev/mathx"
 	aria-label="Github"
 	target="_blank"
-	class="ease-smooth size-3 text-neutral-500 transition-colors duration-500 hover:text-neutral-200"
->
+	class="ease-smooth size-3 text-neutral-500 transition-colors duration-500 hover:text-neutral-200">
 	<Icon name="github" />
 </a>

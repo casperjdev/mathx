@@ -22,6 +22,6 @@
 </svelte:head>
 
 <Navbar />
-<div class="h-full w-full">
+<main class="flex h-full w-full pt-6">
 	{@render children()}
-</div>
+</main>

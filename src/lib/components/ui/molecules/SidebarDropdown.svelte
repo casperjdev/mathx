@@ -22,12 +22,11 @@
 <div
 	bind:this={container}
 	class="transition-height ease-smooth flex shrink-0 flex-col overflow-hidden duration-200"
-	style={`height: ${open ? container && `${container.scrollHeight}px` : '56px'}`}
->
+	style={`height: ${open ? container && `${container.scrollHeight}px` : '56px'}`}>
 	<SidebarToggle bind:open name={module.title} />
 	<div class="flex flex-col gap-2">
 		{#each module.items as item}
-			<SidebarItem dropdown={module.title} name={item} />
+			<SidebarItem dropdown={module.title} name={item} isOpen={open} />
 		{/each}
 	</div>
 </div>

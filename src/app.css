@@ -4,10 +4,52 @@
 	--ease-smooth: cubic-bezier(0, 0.8, 0.2, 1);
 
 	--breakpoint-lg: 900px;
-
+	--breakpoint-8xl: 1536px;
 	--text-2xs: 0.5rem;
 
 	--container-8xl: 1536px;
+
+	--pattern-r: repeating-linear-gradient(
+		-45deg,
+		currentColor 0px,
+		currentColor 1.5px,
+		transparent 0px,
+		transparent 50%
+	);
+
+	--pattern-l: repeating-linear-gradient(
+		45deg,
+		currentColor 0px,
+		currentColor 1.5px,
+		transparent 0px,
+		transparent 50%
+	);
+
+	--pattern-h: repeating-linear-gradient(
+		0deg,
+		currentColor 0px,
+		currentColor 1.5px,
+		transparent 0px,
+		transparent 50%
+	);
+
+	--pattern-v: repeating-linear-gradient(
+		90deg,
+		currentColor 0px,
+		currentColor 1.5px,
+		transparent 0px,
+		transparent 50%
+	);
+
+	--page-gradient: linear-gradient(
+		135deg,
+		var(--color-neutral-200) 0%,
+		var(--color-neutral-500) 100%
+	);
+
+	--color-ptrn-fg: color-mix(in oklab, var(--color-neutral-500) 25%, transparent);
+
+	--text-3xs: 0.375rem;
 }
 
 :root {
@@ -16,6 +58,7 @@
 	background-image: url('/bg.png');
 	background-attachment: fixed;
 	background-position: center;
+	background-size: cover;
 }
 
 html,
@@ -28,6 +71,11 @@ body {
 *::after {
 	scrollbar-width: thin;
 	scrollbar-color: rgb(229 229 229) rgb(10 10 10);
+}
+
+*:focus-visible {
+	outline: 2px solid var(--color-neutral-200);
+	outline-offset: -2px;
 }
 
 *::-webkit-scrollbar {

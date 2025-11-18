@@ -1,1 +1,7 @@
-<h1 class="text-red-500">hello</h1>
+<script>
+	import Hero from './components/Hero.svelte';
+</script>
+
+<main class="flex h-full w-full">
+	<Hero />
+</main>

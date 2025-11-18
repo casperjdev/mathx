@@ -12,13 +12,14 @@
 		font-size: var(--text-2xs);
 
 		h1 {
-			padding-block: 1rem;
+			padding-bottom: 1rem;
 			font-size: var(--text-4xl);
+			line-height: 1;
 		}
 
-		@media (max-width: 1024px) {
+		@media (max-width: 900px) {
 			h1 {
-				font-size: var(--text-xl);
+				font-size: var(--text-2xl);
 			}
 		}
 	}
